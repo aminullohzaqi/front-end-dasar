@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+header, main {
+    display: inline;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-image: url('../images/satellite-vector.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+nav {
+    background-color: #0E185F;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+nav a:hover {
+    color: #E8FFC2;
+}
+
+main {
+    display: flex;
+    padding: 10px 20px;
+}
+
+.content {
+    flex: 3 auto;
+}
+
+.profile {
+    flex: 1 auto;
+    margin-left: 20px;
+    max-height: 360px;
+    position: sticky;
+    top: 80px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+h2, h3 {
+    color: #2FA4FF;
+}
+
+article, section {
+    margin-bottom: 40px;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile #profile-image {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.profile #profile-name {
+    min-width: 180px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #2FA4FF;
+}
+
+.profile table {
+    margin: 0 auto;
+    text-align: left;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #0E185F;
+    text-align: center;
+    font-weight: bold;
+}
+
+cite a {
+    font-style: normal;
+    text-decoration: none;
+    color: #0E185F;
+}
+
+#btnTop{
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 30px;
+    z-index: 2;
+    background-color: #2FA4FF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+    padding: 13px;
+    border-radius: 50%;
+}
+
+#btnTop:hover {
+    background-color: #0E185F;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        display: block;
+        padding: 5px 10px;
+    }
+
+    .profile {
+        margin-left: 0;
+    }
+}

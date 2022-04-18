@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Penginderaan Jarak Jauh BMKG</title>
+</head>
+<body>
+    <header>
+        <div class="jumbotron">
+            <h1>Penginderaan Jauh</h1>
+            <p>Badan Meteorologi Klimatologi dan Geofisika</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a onclick="toSectionPengertian()">Pengertian</a></li>
+                <li><a onclick="toSectionSatelit()">Satelit</a></li>
+                <li><a onclick="toSectionRadar()">Radar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="content" class="card">
+            <article id="pengertian">
+                <h2>Pengertian Penginderaan Jauh</h2>
+                <p>Penginderaan jarak jauh adalah pengukuran atau akuisisi data suatu objek atau fenomena oleh sebuah alat yang tidak secara fisik melakukan kontak dengan objek tersebut atau dari jarak jauh, misalnya dari pesawat, pesawat luar angkasa, satelit, dan kapal. Contoh Penginderaan jauh antara lain satelit pengamatan bumi, satelit cuaca, memonitor janin dengan ultrasonik, dan wahana luar angkasa yang memantau planet dari orbit. <cite><a href="https://www.gramedia.com/literasi/penginderaan-jauh-2/" target="_blank">(sumber: gramedia.com)</a></cite></p>
+                <p>Badan Meteorologi Klimatologi dan Geofisika (BMKG) memiliki dua metode untuk melakukan penginderaan jarak jauh, yaitu dengan menggunakan citra satelit dengan bantuan satelit <cite><a href="https://www.bmkg.go.id/satelit/" target="_blank">himawari</a></cite> dan juga citra radar dengan bantuan instrumen radar cuaca.</p>
+            </article>
+            <article id="citra-satelit">
+                <h2>Citra Satelit</h2>
+                <p>Citra satelit yang dihasilkan oleh satelit himawari memiliki bermacam-macam jenis, dan akan dijelaskan pada artikel di bawah ini</p>
+                <section>
+                    <h3>Himawari-8 IR Enhanced</h3>
+                    <img src="assets/images/Himawari-8 IR Enhanced.png" class="featured-image" alt="Himawari IR Enhanced">
+                    <p>Pada produk Himawari-8 EH menunjukkan suhu puncak awan yang didapat dari pengamatan radiasi pada panjang gelombang 10.4 mikrometer yang kemudian diklasifikasi dengan pewarnaan tertentu, dimana warna hitam atau biru menunjukkan tidak terdapat pembentukan awan yang banyak (cerah), sedangkan semakin dingin suhu puncak awan, dimana warna mendekati jingga hingga merah, menunjukan pertumbuhan awan yang signifikan dan berpotensi terbentuknya awan Cumulonimbus.</p>
+                </section>
+                <section>
+                    <h3>Himawari-8 Natural Color</h3>
+                    <img src="assets/images/Himawari-8 Natural Color.png" class="featured-image" alt="Himawari Natural Color">
+                    <p>Produk Himawari-8 NC menggunakan metode RGB (Red Green Blue) dimana beberapa band dari data satelit digabungkan sehingga diperoleh identifikasi warna yang lebih jelas. Produk ini digunakan untuk mengamati proses konvektifitas, ketebalan awan, serta mikrofisis awan. Produk ini menggunakan band visible yang dipancarkan oleh matahari, sehingga produk ini hanya tersedia pada saat pagi hingga sore hari.</p>
+                </section>
+                <section>
+                    <h3>Himawari-8 Water Vapor Enhanced</h3>
+                    <img src="assets/images/Himawari-8 Water Vapor Enhanced.png" class="featured-image" alt="Himawari Water Vapor">
+                    <p>Produk Himawari-8 WE menampilkan kondisi kelembaban atmosfer pada lapisan menengah hingga atas yang didapat dari radiasi infrared pada panjang gelombang 6.2 mikrometer. Produk ini dapat menunjukkan kondisi kelembapan udara sebagai bahan pembentukan awan, dimana wilayah yang berwarna coklat menunjukkan kondisi kering dan berwarna biru menunjukkan kondisi basah. Produk ini digunakan untuk mengamati pergerakan massa udara kering dari benua Australia pada musim kemarau.</p>
+                </section>
+                <section>
+                    <h3>Himawari-8 Rainfall Potential</h3>
+                    <img src="assets/images/Himawari-8 Rainfall Potential.png" class="featured-image" alt="Himawari Rainfall Potential">
+                    <p>Produk turunan Himawari-8 Potential Rainfall adalah produk yang dapat digunakan untuk mengestimasi potensi curah hujan, yang disajikan berdasarkan kategori ringan, sedang, lebat, hingga sangat lebat, dengan menggunakan hubungan antara suhu puncak awan dengan curah hujan yang berpotensi dihasilkan.</p>
+                </section>
+                <section>
+                    <h3>Himawari-8 RDCA</h3>
+                    <img src="assets/images/Himawari-8 RDCA.png" class="featured-image" alt="Himawari RDCA">
+                    <p>Produk ini adalah hasil kolaborasi penelitian dengan JMA untuk menentukan awan Cumulus yang berpotensi menjadi Cumulonimbus (tanda positif merah) dalam 1 jam ke depan.</p>
+                </section>
+                <section>
+                    <h3>Himawari-8 Cloud Type</h3>
+                    <img src="assets/images/Himawari-8 Cloud Type.png" class="featured-image" alt="Himawari Cloud Type">
+                    <p>Produk ini adalah hasil kolaborasi penelitian dengan JMA untuk mengidentifikasi secara objektif jenis awan yang ditangkap oleh band infrared dan visibel dari satelit Himawari. Produk ini diupdate setiap 1 jam.</p>
+                </section>
+                <section>
+                    <h3>Himawari-8 Cloud Top Height</h3>
+                    <img src="assets/images/Himawari-8 Cloud Top Height.png" class="featured-image" alt="Himawari Cloud Top Height">
+                    <p>Produk ini adalah hasil kolaborasi penelitian dengan JMA untuk mengidentifikasi secara objektif tinggi puncak awan yang ditangkap oleh band infrared dari satelit Himawari. Produk ini diupdate setiap 1 jam.</p>
+                </section>
+                <section>
+                    <h3>Himawari-8 Convective Cloud</h3>
+                    <img src="assets/images/Himawari-8 Convective Cloud.png" class="featured-image" alt="Himawari Convective Cloud">
+                    <p>Produk ini adalah hasil kolaborasi penelitian dengan JMA untuk mengidentifikasi secara objektif jenis awan konvektif yang ditangkap oleh band infrared dan visibel dari satelit Himawari. Produk ini diupdate setiap 1 jam.</p>
+                </section>
+                <section>
+                    <h3>Himawari-8 Geohotspot</h3>
+                    <img src="assets/images/Himawari-8 Geohotspot.png" class="featured-image" alt="Himawari Geohotspot">
+                    <p>Potensi terjadinya kebakaran hutan dan lahan dapat teramati dengan citra satelit Himawari-8 dengan menggunakan data suhu kecerahan kanal infrared untuk filtering awan, serta menentukan anomali suhu panas yang menunjukkan potensi terjadi kebakaran hutan (titik merah).Selain itu ditampilkan juga citra RGB pada kanal visibel dan near infrared untuk mendeteksi sebaran asap (warna coklat) untuk lebih memastikan didaerah tersebut terjadi kebakaran.</p>
+                </section>
+            </article>
+            <article id="citra-radar">
+                <h2>Citra Radar</h2>
+                <img src="assets/images/Citra Radar.png" class="featured-image" alt="citra radar">
+                <p>Citra radar cuaca menggambarkan potensi intensitas curah hujan yang dideteksi oleh radar cuaca. Pengukuran intensitas curah hujan (presipitasi) oleh radar cuaca berdasarkan seberapa besar pancaran energi radar yang dipantulkan kembali oleh butiran-butiran air di dalam awan dan digambarkan dengan produk Reflectivity yang memiliki besaran satuan dBZ (decibel). Makin besar energi pantul yang diterima radar maka makin besar juga nilai dBZ, dan semakin besar nilai dBZ reflectivity menunjukkan intensitas hujan yang terjadi semakin besar. Jangkauan terjauh/maksimum produk Reflectivity dari radar BMKG adalah sekitar 240 km dari lokasi radar.</p>
+                <p>Skala dBZ pada legenda berkisar 5 - 75 yang dinyatakan dengan gradasi warna biru langit hingga ungu muda. Jika gradasi warna semakin ke arah ungu maka semakin tinggi intensitas hujannya. Kisaran intensitas hujan berdasarkan skala warna dBZ dan mm/jam disajikan seperti dalam tabel berikut: Skala dBZ pada legenda berkisar 5 - 75 yang dinyatakan dengan gradasi warna biru langit hingga ungu muda. Jika gradasi warna semakin ke arah ungu maka semakin tinggi intensitas hujannya.</p>
+            </article>
+        </div>
+        <aside class="profile card">
+            <header>
+                <h2>Penulis</h2>
+                <figure>
+                    <img src="assets/images/profile-image.jpeg" id="profile-image" alt="profile">
+                    <figcaption id="profile-name">Aminulloh Zaqi Darojat</figcaption>
+                </figure>
+            </header>
+            <section>
+                <table>
+                    <tr>
+                        <th>Email</th>
+                        <td>aminulloh.zaqi@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>Github</th>
+                        <td><cite><a href="https://github.com/aminullohzaqi" target="_blank">aminullohzaqi</a></cite></td>
+                    </tr>
+                </table>
+            </section>
+        </aside>
+    </main>
+    <img src="assets/images/arrow-icon.svg" onclick="backToTopFunction()" id="btnTop" alt="arrow icon">
+    <footer>
+        <p>&#169; Aminulloh Zaqi Darojat, 2022</p>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
